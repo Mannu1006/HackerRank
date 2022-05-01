@@ -21,20 +21,8 @@ int main()
 		{
 			if (i == 0 || str[i] == str[i - 1])
 				cnt++;
-			else
-			{
-				if (cnt > 1)
-				{
-					ans += cnt - 1;
-				}
-				cnt = 1;
-			}
 		}
-		if (cnt > 1)
-		{
-			ans += cnt - 1;
-		}
-		cout << ans << endl;
+		cout << cnt-1 << endl;
 	}
 	return 0;
 }
